@@ -1,78 +1,86 @@
-# Hydra
+[DEMO](https://tsjensen.github.io/fuse-core/)
 
-Marketing site template for Jekyll. Browse through a [live demo](https://proud-alligator.cloudvent.net/).
-Increase the web presence of your brand with this configurable theme.
+# Fuse Core
 
-![Hydra template screenshot](images/_screenshot.png)
+**A lightweight Jekyll theme for single-page personal websites.**
 
-Hydra was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
+[![Screenshot](README.pic1.jpg)](https://tsjensen.github.io/fuse-core/)
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+This [Jekyll](https://jekyllrb.com/) theme is for you if you need a personal website that simply
+summarizes the links to your social media profiles and external content.
 
-## Features
+- *responsive* - adapts to all screen sizes
+- *mobile-friendly*
+- *lightweight* - no JavaScript (except for Google Analytics, if enabled)
+- *easy to configure* - no HTML knowledge required, just change *_config.yml* ([step-by-step guide](https://github.com/tsjensen/fuse-core/wiki/Setup-Instructions))
+- *fast* - All third party components loaded via their CDN (with
+  [subresource integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)),
+  so most resources are already cached from visits to other websites.
+- Optional Google Analytics support, with IP anonymization and cookie consent popup
+  (optional, but these things are helpful to comply with EU data protection laws).
+  You'll need to have a Google Analytics account set up for this to work, of course.  
+  We even generate statistics on how often people click on your specific social media links, for example:  
+  ![GA Outbound Stats](README.pic2.png)
 
-* Contact form
-* Pre-built pages
-* Pre-styled components
-* Blog with pagination
-* Post category pages
-* Disqus comments for posts
-* Staff and author system
-* Configurable footer
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
 
-## Setup
+## Performance Hint
 
-1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics and Disqus keys to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+It is a good idea to increase the cache lifetime of the background image, so that public proxies and users' browsers
+do not need to download it every time. GitHub Pages does not support cache control, but if *your* web server supports
+`.htaccess` files, you may want to add one to the *images* folder like so:
 
-## Develop
+```ApacheConf
+# Cache the large background image for 1 year
+<IfModule mod_headers.c>
+    <Files "background.jpg">
+        Header unset ETag
+        Header set Cache-Control "public, max-age=31536000"
+    </Files>
+</IfModule>
+```
 
-Hydra was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
 
-Install the dependencies with [Bundler](http://bundler.io/):
+## License
 
-~~~bash
-$ bundle install
-~~~
+The *Fuse Core* theme is free to use and modify under the terms of the
+[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+## Ancestry
 
-~~~bash
-$ bundle exec jekyll serve
-~~~
+The visual design for this theme is heavily inspired by [Dashingcode](https://github.com/dashingcode)'s
+[front-cover](https://github.com/dashingcode/front-cover). Big thank you, it looks awesome!
 
-## Editing
+However, *Fuse Core* is a complete reimplementation, which makes it very different on the inside.
+There are many improvements big and small over front-cover, making *Fuse Core* a kind of "front-cover 2.0" or
+"front-cover Plus":
 
-Hydra is already optimised for adding, updating and removing pages, staff, advice, company details and footer elements in CloudCannon.
+- Complete configuration via *_config.yml*, including order of links or adding of new links.
+- Ability to show extra HTML below the links, for any crisp statement that you deem necessary to add.
+- Use of Bootstrap for responsive design. This gives us supreme browser compatibility and ease of maintenance,
+  because a myriad of problems are already handled by the folks at Bootstrap.
+- [SASS](https://sass-lang.com/) styling instead of raw CSS
+- Up-to-date libraries, especially Font Awesome&nbsp;5.
+- Support for [Google Analytics ](https://analytics.google.com/analytics/web/), including tracking of outbound links
+  (so you'll know which social media profiles people clicked on), and some legal details such as IP anonymization
+  and cookie consent popup (all optional).
+- Search engine control via configurable meta tags
+- Responsive sticky footer
 
-### Posts
 
-* Add, update or remove a post in the *Posts* collection.
-* The **Staff Author** field links to members in the **Staff** collection.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-* Change the defaults when new posts are created in `_posts/_defaults.md`.
+## Credits
 
-### Contact Form
+This theme draws upon the following work by others:
 
-* Preconfigured to work with CloudCannon, but easily changed to another provider (e.g. [FormSpree](https://formspree.io/)).
-* Sends email to the address listed in company details.
-
-### Staff
-
-* Reused around the site to save multiple editing locations.
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
-
-### Navigation
-
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Navigation* section.
-
-### Footer
-
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Footer* section.
+- Visual appearance from the [front-cover](https://github.com/dashingcode/front-cover) theme by Dashingcode under
+  [MIT license](https://github.com/dashingcode/front-cover/blob/5fb173ed1b130a1414b8f839feea6d4e97cbd9b4/LICENSE).
+- All icons are provided by [Font Awesome](https://fontawesome.com/) under
+  [SIL OFL](https://fontawesome.com/license) license.  
+  The [star icon](https://fontawesome.com/icons/star?style=solid) used as dummy favicon is provided
+  by Font Awesome under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
+- The [background image](https://pxhere.com/en/photo/792989) is used under
+  [CC0 Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) license.
+- The [Open Sans](https://fonts.google.com/specimen/Open+Sans) font by Steve Matteson is used under
+  [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) license.
+- The [Bootstrap](https://getbootstrap.com/) framework is used under
+  [MIT](https://github.com/twbs/bootstrap/blob/9c469cd0e8abaac19c163622ed68b6783dfa366c/LICENSE) license.
+- The [dummy avatar image](images/avatar.svg) was generated using [TinyGraphs](http://www.tinygraphs.com/).
