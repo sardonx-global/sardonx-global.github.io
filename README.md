@@ -1,86 +1,306 @@
-[DEMO](https://tsjensen.github.io/fuse-core/)
+# Jekyll Theme based on Startbootstrap Agency
 
-# Fuse Core
+jekyll-theme-startbootstrap-agency is a Jekyll theme based on Start Bootstrap - Agency. You can see the [live demo](http://www.vrachas.com/jekyll-theme-startbootstrap-agency/).
 
-**A lightweight Jekyll theme for single-page personal websites.**
+"Agency is a stylish, one page Bootstrap theme for agencies and small businesses. The design of Agency is based off of the Golden PSD Theme by Mathavan Jaya. You can download the PSD verison of this theme at FreebiesXpress.com."
 
-[![Screenshot](README.pic1.jpg)](https://tsjensen.github.io/fuse-core/)
+## Preview
 
-This [Jekyll](https://jekyllrb.com/) theme is for you if you need a personal website that simply
-summarizes the links to your social media profiles and external content.
+[![Agency Preview](https://startbootstrap.com/assets/img/templates/agency.jpg)](http://www.vrachas.com/jekyll-theme-startbootstrap-agency/)
 
-- *responsive* - adapts to all screen sizes
-- *mobile-friendly*
-- *lightweight* - no JavaScript (except for Google Analytics, if enabled)
-- *easy to configure* - no HTML knowledge required, just change *_config.yml* ([step-by-step guide](https://github.com/tsjensen/fuse-core/wiki/Setup-Instructions))
-- *fast* - All third party components loaded via their CDN (with
-  [subresource integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)),
-  so most resources are already cached from visits to other websites.
-- Optional Google Analytics support, with IP anonymization and cookie consent popup
-  (optional, but these things are helpful to comply with EU data protection laws).
-  You'll need to have a Google Analytics account set up for this to work, of course.  
-  We even generate statistics on how often people click on your specific social media links, for example:  
-  ![GA Outbound Stats](README.pic2.png)
+**[View Live Preview](http://www.vrachas.com/jekyll-theme-startbootstrap-agency/)**
+
+## Background
+
+The objective of this project is to provide a Jekyll theme that is line by line perfect replica of “Startbootstrap - Agency” and at the same time to be so dynamic that can be used as a starting point for   child themes.
+
+Currently the only difference between “Startbootstrap – Agency” and jekyll-theme-startbootstrap-agency as served with the default content is found in the final `css/agency.min.css` which is normal since the scss is compiled by different engines.
+
+https://github.com/y7kim/agency-jekyll-theme has not been updated for more that a year and it is still based in Bootstrap 3
 
 
-## Performance Hint
+## Features:
+- MIT License
+- Built to support the latest, stable releases of all major browsers and platforms.
+- Fully responsive HTML template created with Bootstrap 4
+- Custom collapsing navigation with active classes, smooth page scrolling, and responsive fallback stylings
+- Services section with CSS only circle icons by Font Awesome
+- Portfolio grid with modal window popup previews for portfolio item details
+- About section with a responsive timeline, special thanks to Bootsnipp
+- Team member section with circle profile images and social media links
+- Contact form with validation - just add your server url to the `js-url` at `_data/home.yml`
+- Footer with social links, copyright information, and other links
+- SCSS files included for deeper customization options
 
-It is a good idea to increase the cache lifetime of the background image, so that public proxies and users' browsers
-do not need to download it every time. GitHub Pages does not support cache control, but if *your* web server supports
-`.htaccess` files, you may want to add one to the *images* folder like so:
 
-```ApacheConf
-# Cache the large background image for 1 year
-<IfModule mod_headers.c>
-    <Files "background.jpg">
-        Header unset ETag
-        Header set Cache-Control "public, max-age=31536000"
-    </Files>
-</IfModule>
+## Installation
+
+Add this line to your Jekyll site's `Gemfile`:
+
+```ruby
+gem "jekyll-theme-startbootstrap-agency"
 ```
 
+And add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+theme: jekyll-theme-startbootstrap-agency
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install jekyll-theme-startbootstrap-agency
+
+## Usage
+
+**[Usage Example](https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency-child)**
+
+`_config.yml`
+```
+title: [The title of your site]
+description: [A short description of your site's purpose]
+author: [The author of the website]
+
+sass: # Enables the conversion of css/agency.min.scss to  css/agency.min.css
+  style: compressed # Minify css/agency.min.css
+
+collections: # Enables additional data structures 
+  projects: # Enables _projects
+```
+`assets/css/`
+- `agency.min.scss` Add any additional styling
+
+`assets/_scss/`
+- `_variables.scss`
+```
+$primary: [hexcode of the primary color] !default;
+```
+- `assets/_mixins.scss` Font Configuration
+- `assets/_masthead.scss` Master Header
+```
+ background-image: url('[Path to master header background image]');
+```
+- `assets/_contact.scss`
+```
+ background-image: url('[Path to contact section background image]');
+```
+`_data/`
+- `default.yml` Data used by the default layout
+```
+brand:
+  name: [Top left name]
+menu-string: [Collapsed menu text]
+
+nav: # Navbar links
+  - title: [Link title]
+    url: '[Link]'
+  ...
+  - title: [Link title]
+    url: '[Link]'
+
+copyright: [Copyright notice]
+
+social-buttons: # Footer social buttons
+  - icon: [Font awesome icon code]
+    url: '[Link]' 
+  ...
+  - icon: [Font awesome icon code]
+    url: '[Link]'
+
+quicklinks: # Footer links
+    - title: [Link title]
+    url: '[Link]'
+  ...
+  - title: [Link title]
+    url: '[Link]'
+
+modal: # Modal strings for l10n
+```
+- `home.yml` Data used by the homepage
+```
+intro: # Master header text
+
+services: # Services section 
+  heading: [Services Title]
+  subheading: [Services Subtile]
+  service: # List of services
+    - icon: [Font Awasome icon code]
+      heading: [Service Title]
+      text: [Service text]
+    ...
+    - icon: [Font Awasome icon code]
+      heading: [Service Title]
+      text: [Service text]
+
+
+portfolio: # portfolio section
+  heading: [Portfolio title]
+  subheading: [Portfolio subtitle]
+
+about: # About section
+  heading: [About title]
+  subheading: [About subtitle]
+  timeline: # List
+    - image: [Image path]
+      date: [Date]
+      title: [Title]
+      text: [Text]
+    ...
+    - image: [Image path]
+      date: [Date]
+      title: [Title]
+      text: [Text]
+
+  end1: [End bubble first line ]
+  end2: [End bubble second line ]
+  end3: [End bubble third line ]
+
+team:
+  heading: [Title] 
+  subheading: [Subtitle]
+  members: [List of members]
+    - name: [Member's name]
+      role: [Member's role]
+      img: [Member's image path]
+      social-buttons: [List of Member's Social Media profiles]
+        - icon: [Font Awasome icon code]
+          url: '[Link to Member's Social Media]' 
+        ...
+        - icon: [Font Awasome icon code]
+          url: '[Link to Member's Social Media]'
+
+    - name: [Member's name]
+      role: [Member's role]
+      img: [Member's image path]
+      social-buttons: [List of Member's Social Media profiles]
+        - icon: [Font Awasome icon code]
+          url: '[Link to Member's Social Media]' 
+        ...
+        - icon: [Font Awasome icon code]
+          url: '[Link to Member's Social Media]'
+
+  text: [Text under members list] 
+
+clients: # List of clients logos and links
+  - img: [Path to clients logo image]
+    url: '[Link to clients website]'
+  ...
+  - img: [Path to clients logo image]
+    url: '[Link to clients website]'
+
+contact: # Contact Section
+  heading: [Translateble string]
+  ... 
+  btn: [Translatable string]
+
+  js-url: '[Contact form target]'
+  js-success: '[Translatable string]'
+  js-error: '[Translatable string]' # Attention around " + firstName + "
+  js-error-min: '[Translatable string]' # Attention around "+i+"
+```
+`_layouts/`
+- `default.html` Default layout
+- `home.html` Home layout
+
+`assets/js/`
+- `contact_me.js` Contact form checker and submitter
+
+`_projects/` Directory storing project data
+- `*.md` Project data
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency/issues . This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+The theme is setup just like a normal Jekyll site! To test the theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using the theme. Edit pages, documents, data, etc. like normal to test the theme's contents. As you make modifications to the theme and to the content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+## About
+
+jekyll-theme-startbootstrap-agency is an open source Jekyll theme based on [Start Bootstrap - Agency](https://github.com/BlackrockDigital/startbootstrap-agency) 
+
+```
+The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
+
+Start Bootstrap - Agency is based on the [Bootstrap](https://github.com/twbs/bootstrap) framework.
+
+```
+The MIT License (MIT)
+
+Copyright (c) 2011-2018 Twitter, Inc.
+Copyright (c) 2011-2018 The Bootstrap Authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
 
 ## License
 
-The *Fuse Core* theme is free to use and modify under the terms of the
-[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
+Copyright 2018 Sotirios Vrachas. The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-## Ancestry
+```
+The MIT License (MIT)
 
-The visual design for this theme is heavily inspired by [Dashingcode](https://github.com/dashingcode)'s
-[front-cover](https://github.com/dashingcode/front-cover). Big thank you, it looks awesome!
+Copyright (c) 2018 Sotirios Vrachas
 
-However, *Fuse Core* is a complete reimplementation, which makes it very different on the inside.
-There are many improvements big and small over front-cover, making *Fuse Core* a kind of "front-cover 2.0" or
-"front-cover Plus":
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-- Complete configuration via *_config.yml*, including order of links or adding of new links.
-- Ability to show extra HTML below the links, for any crisp statement that you deem necessary to add.
-- Use of Bootstrap for responsive design. This gives us supreme browser compatibility and ease of maintenance,
-  because a myriad of problems are already handled by the folks at Bootstrap.
-- [SASS](https://sass-lang.com/) styling instead of raw CSS
-- Up-to-date libraries, especially Font Awesome&nbsp;5.
-- Support for [Google Analytics ](https://analytics.google.com/analytics/web/), including tracking of outbound links
-  (so you'll know which social media profiles people clicked on), and some legal details such as IP anonymization
-  and cookie consent popup (all optional).
-- Search engine control via configurable meta tags
-- Responsive sticky footer
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-
-## Credits
-
-This theme draws upon the following work by others:
-
-- Visual appearance from the [front-cover](https://github.com/dashingcode/front-cover) theme by Dashingcode under
-  [MIT license](https://github.com/dashingcode/front-cover/blob/5fb173ed1b130a1414b8f839feea6d4e97cbd9b4/LICENSE).
-- All icons are provided by [Font Awesome](https://fontawesome.com/) under
-  [SIL OFL](https://fontawesome.com/license) license.  
-  The [star icon](https://fontawesome.com/icons/star?style=solid) used as dummy favicon is provided
-  by Font Awesome under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
-- The [background image](https://pxhere.com/en/photo/792989) is used under
-  [CC0 Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) license.
-- The [Open Sans](https://fonts.google.com/specimen/Open+Sans) font by Steve Matteson is used under
-  [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) license.
-- The [Bootstrap](https://getbootstrap.com/) framework is used under
-  [MIT](https://github.com/twbs/bootstrap/blob/9c469cd0e8abaac19c163622ed68b6783dfa366c/LICENSE) license.
-- The [dummy avatar image](images/avatar.svg) was generated using [TinyGraphs](http://www.tinygraphs.com/).
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
