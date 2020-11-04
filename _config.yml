@@ -1,11 +1,11 @@
-title: Agency - Start Bootstrap Theme
+title: SardonX Global
 description: ''
-author: ''
+author: 'LuminAwe Global LLC'
 
 sass:
   style: compressed
 
-assets_path: '' 
+assets_path: '/assets/' 
 
 collections:
   projects:
