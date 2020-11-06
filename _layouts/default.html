@@ -90,12 +90,12 @@
 
     {% assign ws = '' %}
     {%- if page.layout == 'home' -%}
-    <!-- Portfolio Modals -->
-    {%- for project in site.projects -%}
+    <!-- product Modals -->
+    {%- for product in site.products -%}
 {% assign ws = '' %}
 
     <!-- Modal {{ project.id | replace: '/projects/', '' }} -->
-    <div class="portfolio-modal modal fade" id="portfolioModal{{ project.id | replace: '/projects/', '' }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="product-modal modal fade" id="productModal{{ product.id | replace: '/products/', '' }}" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -108,15 +108,15 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">{{ project.title }}</h2>
-                  <p class="item-intro text-muted">{{ project.description }}</p>
-                  <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ project.image }}" alt="">
+                  <h2 class="text-uppercase">{{ product.title }}</h2>
+                  <p class="item-intro text-muted">{{ product.description }}</p>
+                  <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ product.image }}" alt="">
                   {% assign ws = '' %}
-                  {{- project.content -}}
+                  {{- product.content -}}
                   {% assign ws = '' %}                  <ul class="list-inline">
-                    <li>{{ site.data.default.modal.date-string }}{{ project.date | date: "%B %Y" }}</li>
-                    <li>{{ site.data.default.modal.client-string }}{{ project.client }}</li>
-                    <li>{{ site.data.default.modal.category-string }}{{ project.category }}</li>
+                    <li>{{ site.data.default.modal.date-string }}{{ product.date | date: "%B %Y" }}</li>
+                    <li>{{ site.data.default.modal.client-string }}{{ product.client }}</li>
+                    <li>{{ site.data.default.modal.category-string }}{{ product.category }}</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="{{ site.data.default.modal.close-icon }}"></i>

@@ -4,7 +4,7 @@ menu-string: Menu
 
 nav:
   - title: Missions
-    url: '#services'
+    url: '#missions'
   - title: Products
     url: '#portfolio'
   - title: How to

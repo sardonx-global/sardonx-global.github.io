@@ -18,7 +18,7 @@ layout: default
     </header>
 
     <!-- Services -->
-    <section id="services">
+    <section id="missions">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -43,8 +43,8 @@ layout: default
       </div>
     </section>
 
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <!-- product Grid -->
+    <section class="bg-light" id="products">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -53,20 +53,20 @@ layout: default
           </div>
         </div>
         <div class="row">
-          {%- for project in site.projects -%}
+          {%- for product in site.products -%}
           {% assign ws = '' %}
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ project.id | replace: '/projects/', '' }}">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
+          <div class="col-md-4 col-sm-6 product-item">
+            <a class="product-link" data-toggle="modal" href="#productModal{{ product.id | replace: '/products/', '' }}">
+              <div class="product-hover">
+                <div class="product-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
+              <img class="img-fluid" src="{{ assets_path }}{{ product.thumbnail }}" alt="">
             </a>
-            <div class="portfolio-caption">
-              <h4>{{ project.client }}</h4>
-              <p class="text-muted">{{ project.category }}</p>
+            <div class="product-caption">
+              <h4>{{ product.client }}</h4>
+              <p class="text-muted">{{ product.category }}</p>
             </div>
           </div>
           {%- endfor -%}
@@ -160,7 +160,7 @@ layout: default
     </section>
 
     <!-- Clients -->
-    <section class="py-5">
+    <!-- <section class="py-5">
       <div class="container">
         <div class="row">
           {%- for client in site.data.home.clients -%}
@@ -174,7 +174,7 @@ layout: default
         {% assign ws = '' %}
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Contact -->
     <section id="contact">
