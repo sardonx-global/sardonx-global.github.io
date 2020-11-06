@@ -8,11 +8,11 @@ nav:
   - title: Products
     url: '#products'
   - title: How to
-    url: '#about'
+    url: '#howto'
   - title: Team
     url: '#team'
-  - title: Contact
-    url: '#contact'
+  - title: Order
+    url: '#order'
 
 copyright: Copyright &copy; SardonX Global 2020
 

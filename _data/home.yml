@@ -21,23 +21,23 @@ products:
   heading: Products
   subheading: Lorem ipsum dolor sit amet consectetur.
 
-about:
+howto:
   heading: How to
   subheading: Lorem ipsum dolor sit amet consectetur.
-  timeline:
-    - image: img/about/1.jpg
+  process:
+    - image: img/howto/1.jpg
       date: 2009-2011
       title: Place your order
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-    - image: img/about/2.jpg
+    - image: img/howto/2.jpg
       date: March 2011
       title: We optimize the supply chain scenario
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-    - image: img/about/3.jpg
+    - image: img/howto/3.jpg
       date: December 2012
       title: Do your payments
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-    - image: img/about/4.jpg
+    - image: img/howto/4.jpg
       date: July 2014
       title: Recieve your order
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
@@ -50,7 +50,7 @@ team:
   heading: Our Amazing Team
   subheading: Lorem ipsum dolor sit amet consectetur.
   members:
-    - name: Kay Garland
+    - name: Stacey Lewis
       role: Lead Designer
       img: img/team/1.jpg
       social-buttons:
@@ -61,7 +61,7 @@ team:
         - icon: fa fa-linkedin
           url: "#"
         
-    - name: Larry Parker
+    - name: Antonio Tito
       role: Lead Marketer
       img: img/team/2.jpg
       social-buttons:
@@ -72,7 +72,40 @@ team:
         - icon: fa fa-linkedin
           url: "#"
 
-    - name: Diana Pertersen
+    - name: Scott Jackson
+      role: Lead Developer
+      img: img/team/3.jpg
+      social-buttons:
+        - icon: fa fa-twitter
+          url: "#"
+        - icon: fa fa-facebook
+          url: "#"
+        - icon: fa fa-linkedin
+          url: "#"
+    
+    - name: Joko Pawitro
+      role: Lead Designer
+      img: img/team/1.jpg
+      social-buttons:
+        - icon: fa fa-twitter
+          url: "#" 
+        - icon: fa fa-facebook
+          url: "#"
+        - icon: fa fa-linkedin
+          url: "#"
+        
+    - name: Oscar Mendoza
+      role: Lead Marketer
+      img: img/team/2.jpg
+      social-buttons:
+        - icon: fa fa-twitter
+          url: "#"
+        - icon: fa fa-facebook
+          url: "#"
+        - icon: fa fa-linkedin
+          url: "#"
+
+    - name: Nancy Vazquez
       role: Lead Developer
       img: img/team/3.jpg
       social-buttons:
@@ -95,7 +128,7 @@ clients:
   - img: img/logos/creative-market.jpg   
     url: "#"
 
-contact:
+order:
   heading: Contact Us
   subheading: Lorem ipsum dolor sit amet consectetur.
   name: Your Name *
