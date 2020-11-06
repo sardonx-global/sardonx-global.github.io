@@ -51,7 +51,7 @@ team:
   subheading: Lorem ipsum dolor sit amet consectetur.
   members:
     - name: Stacey Lewis
-      role: Lead Designer
+      role: Chairman
       img: img/team/1.jpg
       social-buttons:
         - icon: fa fa-twitter
@@ -62,7 +62,7 @@ team:
           url: "#"
         
     - name: Antonio Tito
-      role: Lead Marketer
+      role: Chief Executive Officer
       img: img/team/2.jpg
       social-buttons:
         - icon: fa fa-twitter
@@ -73,7 +73,7 @@ team:
           url: "#"
 
     - name: Scott Jackson
-      role: Lead Developer
+      role: Chief Marketing Officer
       img: img/team/3.jpg
       social-buttons:
         - icon: fa fa-twitter
@@ -84,7 +84,7 @@ team:
           url: "#"
     
     - name: Joko Pawitro
-      role: Lead Designer
+      role: Chief Innovation Officer
       img: img/team/1.jpg
       social-buttons:
         - icon: fa fa-twitter
@@ -94,8 +94,19 @@ team:
         - icon: fa fa-linkedin
           url: "#"
         
+    - name: Nancy Vazquez
+      role: Chief Operating Officer
+      img: img/team/3.jpg
+      social-buttons:
+        - icon: fa fa-twitter
+          url: "#"
+        - icon: fa fa-facebook
+          url: "#"
+        - icon: fa fa-linkedin
+          url: "#"
+
     - name: Oscar Mendoza
-      role: Lead Marketer
+      role: Legal Counsel
       img: img/team/2.jpg
       social-buttons:
         - icon: fa fa-twitter
@@ -105,16 +116,6 @@ team:
         - icon: fa fa-linkedin
           url: "#"
 
-    - name: Nancy Vazquez
-      role: Lead Developer
-      img: img/team/3.jpg
-      social-buttons:
-        - icon: fa fa-twitter
-          url: "#"
-        - icon: fa fa-facebook
-          url: "#"
-        - icon: fa fa-linkedin
-          url: "#"
 
   text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
 
