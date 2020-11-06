@@ -85,7 +85,7 @@ team:
     
     - name: Joko Pawitro
       role: Chief Innovation Officer
-      img: img/team/1.jpg
+      img: img/team/4.jpg
       social-buttons:
         - icon: fa fa-twitter
           url: "#" 
@@ -96,7 +96,7 @@ team:
         
     - name: Nancy Vazquez
       role: Chief Operating Officer
-      img: img/team/3.jpg
+      img: img/team/5.jpg
       social-buttons:
         - icon: fa fa-twitter
           url: "#"
@@ -107,7 +107,7 @@ team:
 
     - name: Oscar Mendoza
       role: Legal Counsel
-      img: img/team/2.jpg
+      img: img/team/6.jpg
       social-buttons:
         - icon: fa fa-twitter
           url: "#"
