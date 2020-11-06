@@ -8,13 +8,13 @@ missions:
   subheading: Lorem ipsum dolor sit amet consectetur.
   mission:
     - icon: fa fa-shopping-cart
-      heading: E-Commerce
+      heading: High Quality Products
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-    - icon: fa fa-laptop
-      heading: Responsive Design
+    - icon: fa fa-arrow-circle-up
+      heading: Elevate Humanity
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-    - icon: fa fa-lock
-      heading: Web Security
+    - icon: fa fa-link
+      heading: Optimize Supply Chain
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 
 products:
