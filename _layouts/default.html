@@ -114,8 +114,8 @@
                   {% assign ws = '' %}
                   {{- product.content -}}
                   {% assign ws = '' %}                  <ul class="list-inline">
-                    <li>{{ site.data.default.modal.date-string }}{{ product.date | date: "%B %Y" }}</li>
-                    <li>{{ site.data.default.modal.client-string }}{{ product.client }}</li>
+                    <li>{{ site.data.default.modal.supply-string }}{{ product.supply }}</li>
+                    <li>{{ site.data.default.modal.client-string }}{{ product.product }}</li>
                     <li>{{ site.data.default.modal.category-string }}{{ product.category }}</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
