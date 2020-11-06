@@ -1,10 +1,10 @@
 intro:
-  lead-in: "Welcome To Our Studio!"
-  heading: It's Nice To Meet You
+  lead-in: "Grow and Thrive for"
+  heading: Humandkind
   btn: Tell Me More
 
 services:
-  heading: Services
+  heading: Missions
   subheading: Lorem ipsum dolor sit amet consectetur.
   service:
     - icon: fa fa-shopping-cart
@@ -17,29 +17,29 @@ services:
       heading: Web Security
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 
-portfolio:
-  heading: Portfolio
+products:
+  heading: Products
   subheading: Lorem ipsum dolor sit amet consectetur.
 
 about:
-  heading: About
+  heading: How to
   subheading: Lorem ipsum dolor sit amet consectetur.
   timeline:
     - image: img/about/1.jpg
       date: 2009-2011
-      title: Our Humble Beginnings
+      title: Place your order
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
     - image: img/about/2.jpg
       date: March 2011
-      title: An Agency is Born
+      title: We optimize the supply chain scenario
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
     - image: img/about/3.jpg
       date: December 2012
-      title: Transition to Full Service
+      title: Do your payments
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
     - image: img/about/4.jpg
       date: July 2014
-      title: Phase Two Expansion
+      title: Recieve your order
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
 
   end1: Be Part

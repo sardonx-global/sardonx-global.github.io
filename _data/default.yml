@@ -1,20 +1,20 @@
 brand:
-  name: Start Bootstrap
+  name: SardonX Global
 menu-string: Menu
 
 nav:
-  - title: Services
+  - title: Missions
     url: '#services'
-  - title: Portfolio
+  - title: Products
     url: '#portfolio'
-  - title: About
+  - title: How to
     url: '#about'
   - title: Team
     url: '#team'
   - title: Contact
     url: '#contact'
 
-copyright: Copyright &copy; Your Website 2018
+copyright: Copyright &copy; SardonX Global 2020
 
 social-buttons:
   - icon: fa fa-twitter
