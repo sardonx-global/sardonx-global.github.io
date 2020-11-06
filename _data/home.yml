@@ -3,10 +3,10 @@ intro:
   heading: Humandkind
   btn: Tell Me More
 
-services:
+missions:
   heading: Missions
   subheading: Lorem ipsum dolor sit amet consectetur.
-  service:
+  mission:
     - icon: fa fa-shopping-cart
       heading: E-Commerce
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
