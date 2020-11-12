@@ -88,11 +88,11 @@ team:
       img: img/team/4.jpg
       social-buttons:
         - icon: fa fa-twitter
-          url: "#" 
+          url: "https://twitter.com/jpawitro" 
         - icon: fa fa-facebook
           url: "#"
         - icon: fa fa-linkedin
-          url: "#"
+          url: "https://linkedin.com/in/jpawitro"
         
     - name: Nancy Vazquez
       role: Chief Operating Officer
