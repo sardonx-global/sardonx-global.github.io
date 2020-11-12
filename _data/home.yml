@@ -5,42 +5,42 @@ intro:
 
 missions:
   heading: Missions
-  subheading: Lorem ipsum dolor sit amet consectetur.
+  subheading: Technology driven. Clients centered. Quality motivated.
   mission:
     - icon: fa fa-shopping-cart
       heading: High Quality Products
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+      text: We hands select all our commodities, we ensure the highest quality according to global standard.
     - icon: fa fa-arrow-circle-up
       heading: Elevate Humanity
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+      text: Our core missions at the company is to implement the latest technologies in artificial intelligence, supply chain management and business intelligence to support sustainable farming and implementation of circular economy for our farmers.
     - icon: fa fa-link
       heading: Optimize Supply Chain
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+      text: We are in the process of developing blockchain technology to facilitate the direct payment and contract for all stakeholders in the trading operations.
 
 products:
   heading: Products
-  subheading: Lorem ipsum dolor sit amet consectetur.
+  subheading: 
 
 howto:
   heading: How to
-  subheading: Lorem ipsum dolor sit amet consectetur.
+  subheading: 
   process:
     - image: img/howto/1.jpg
       date: 2009-2011
       title: Place your order
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+      text: Our manager in Kenya and Rwanda are highly motivated, passionate business man with deep wisdom about needs of the farmers. As soon you place an order, we will ensure you that they will select the best quality commodities.
     - image: img/howto/2.jpg
       date: March 2011
       title: We optimize the supply chain scenario
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+      text: We are concious of the different seasonality of our commodities, therefore we will work with you to determine wether the specific commodities that you are enquiring for is on season. If not we will run the extra miles to locate the best possible sources.
     - image: img/howto/3.jpg
       date: December 2012
-      title: Do your payments
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+      title: Making The Transaction
+      text: We will work with encrypted third party software that guarantees the smooth payment for your company. We ask for the client to cover the shipping and handling cost plus fifty percents of the order. This allow us to built mission in promoting sustainable farming to our farmers.
     - image: img/howto/4.jpg
       date: July 2014
       title: Recieve your order
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+      text: Whether ship air, sea, or by space (we're not there yet), we make sure to partner with reputable shipping companies with global standard. You'll be given a tracking number to monitor your order. Then pick up the order from the port or aiport destination, then execute the remaining 50 percents.
 
   end1: Be Part
   end2: Of Our
@@ -48,10 +48,10 @@ howto:
 
 team:
   heading: Our Amazing Team
-  subheading: Lorem ipsum dolor sit amet consectetur.
+  subheading: 
   members:
     - name: Stacey Lewis
-      role: Chairman
+      role: Founder
       img: img/team/1.jpg
       social-buttons:
         - icon: fa fa-twitter
@@ -115,9 +115,41 @@ team:
           url: "#"
         - icon: fa fa-linkedin
           url: "#"
+    
+    - name: Sahal Abdullah Nore
+      role: Business Development Manager
+      img: img/team/7.jpg
+      social-buttons:
+        - icon: fa fa-twitter
+          url: "#" 
+        - icon: fa fa-facebook
+          url: "#"
+        - icon: fa fa-linkedin
+          url: "#"
+        
+    - name: Caleb Ontweka
+      role: Kenya's Company Representative
+      img: img/team/8.jpg
+      social-buttons:
+        - icon: fa fa-twitter
+          url: "#" 
+        - icon: fa fa-facebook
+          url: "#"
+        - icon: fa fa-linkedin
+          url: "#"
+        
+    - name: Heritier Ukwishaka
+      role: Rwanda's Company Representative
+      img: img/team/9.jpg
+      social-buttons:
+        - icon: fa fa-twitter
+          url: "#"
+        - icon: fa fa-facebook
+          url: "#"
+        - icon: fa fa-linkedin
+          url: "#"
 
-
-  text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+  text: 
 
 clients:
   - img: img/logos/envato.jpg
